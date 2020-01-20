@@ -6,7 +6,7 @@ docker push grdavor/multi-server:latest
 docker push grdavor/multi-worker:latest
 
 docker push grdavor/multi-client:$SHA
-docker push grdavor/mult-server:$SHA
+docker push grdavor/multi-server:$SHA
 docker push grdavor/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=grdavor/multi-server:$SHA
