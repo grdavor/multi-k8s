@@ -2,7 +2,7 @@ docker build -t grdavor/multi-client:latest -t grdavor/multi-client:$SHA -f ./cl
 docker build -t grdavor/multi-server:latest -t grdavor/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t grdavor/multi-worker:latest -t grdavor/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push grdavor/multi-client:latest
-docker push grdavor/mult-server:latest
+docker push grdavor/multi-server:latest
 docker push grdavor/multi-worker:latest
 
 docker push grdavor/multi-client:$SHA
